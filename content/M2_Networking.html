@@ -187,6 +187,56 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="the-bits-and-bytes-of-computer-networking">The Bits and Bytes of Computer Networking</h1>
+<p>This module talked about networking technology in more depth</p>
+<h2 id="week-1-tpcip-layer-model">week 1: TPC/IP layer model</h2>
+<p>The stack model is a way of dealing with the complexity needed to interconnect the wide range of technologies and devices that form the internet. In the stack model the process of connetion is separated in layer, each one responsable for a single functionality at the time. These layers interface herarhically with one another in such a way that they can be thought as a black box system where, the how of the process made is not needed to be known by the other layers in order for the system to work. This modularity simplifies the design  requierments and makes it more robust, facilitating changes in the implementation. </p>
+<p>There are two main different stack models, the five-layered TCP/IP and the seven-layered OSI model, both are intended to organize the connetion process between computers, the difference is that the OSI model is more detailed in the final stage. Where the TCP/IP model has the application layer the OSI model segment it in three different ones.  </p>
+<h3 id="devices-and-the-physical-layer">devices and the physical layer</h3>
+<p>In order to connect between devices there needs to be some kind of infrastructure that supports this communication. Back in the day there were telegraph lines, as the technology advanced telephone lines emerge, wire connected to each end of the transmission. Despide the improvement phones had a scalability problem  connecting then cellphone antennas phones </p>
+<h3 id="data-link-layer">Data link layer</h3>
+<p>MAC address</p>
+<h2 id="week-2-the-networking-layer">week 2: The Networking layer</h2>
+<p>Internet Protocol is intended to organize computers in a logical network IPv4 was originalliy intended to be divide in different classes each one to a specific number of user, however as the numbers grew there needed to be new strategies in order to accomodate the demand. Some of the solutions proposed were: private  not routable IP address, and  Classless Inter-Domain Routing  (CIDR) allowing networking addresing range out of the stablished classes. However this were only temporal solutions and a new standar needed to be created. IPv6 was design to deal with rising number of addresses requiered. It is a 128 bit number divided in two parts first a 64 bit network part followed by a 64.</p>
+<h3 id="arp-address-resolution-protocol">ARP (Address Resolution Protocol)</h3>
+<p>The easiest way to understand what ARP does is thorught an analogy, imagine you want to send a letter to someone, in this case send a letter to Alice. The postal service is the physical layer, the one who made out all the connection infrastructure needed in order send messages, however the infrastructure is not enough you need to know to Alice&apos;s address in order to send her the message. What do you do?</p>
+<p>Well you can <strong>mail every available address (broadcast)</strong> a message saying the following:</p>
+<blockquote>
+<p>I am looking for Alice, if you are Alice please send me back your address if you are not ignore this message</p>
+</blockquote>
+<p>In the real world this doesn&apos;t seem a very practical solution but that is how computer find each other out. And this analogy exposess the weaknesses of this system. This strategy works fine in a small town with few addresses but in a big city you&apos;ll need to send a huge amount of mail in order to find Alice. Back in the networking world this amount of messages can create a overload in trafic, which becomes worst and worst as the network grows. <strong>Subnetting</strong> can counteract this problem, it segments big networks into smaller ones reducing the avaliable addresses any computer can broadcast. </p>
+<p>A second problem this system faces is that of <strong>spoofing</strong>, what prevents me from pretending I am Alice responding your message with _&quot;This is Alice here is my address please send the message to me&quot;, this is a real issue network security face.  </p>
+<h3 id="routing-protocols">routing protocols</h3>
+<p>Routing tables</p>
+<p>Interior Gateway Protocols </p>
+<p>Exterior Gateway Protocols </p>
+<p>NIC: Network Interface Card
+MAC Address: Media Access Control</p>
+<h2 id="week-3-the-transport-layer">week 3: The Transport layer</h2>
+<p>Paradigms of conection or conectionless communication. 
+robust and error control mechanism
+ackwolegment </p>
+<p>the three way handshake: stablishing a TCP connection</p>
+<p>port 
+socket: are the aggregate of an IP address and a port 
+TPC
+UDP</p>
+<p>firewalls</p>
+<h2 id="week-4">week 4:</h2>
+<p><strong>DNS:</strong> Domanin Name Service </p>
+<p><strong>DHCP:</strong> Dynamic Host Configuration Protocol</p>
+<p><strong>NAT:</strong> Network Address Translation</p>
+<p>fierwalls </p>
+<p>proxy servers</p>
+<p><strong>VPN:</strong> Virtual Priveta Network creates a secure connection under a insecure network it is used to remotely connect to a  internal network</p>
+<h2 id="week-5-types-of-connections">week 5: types of connections</h2>
+<p><strong>DSL:</strong> Digital Subscriber lines
+<strong>WLAN</strong>: Wireless LAN 
+Channel 
+Security</p>
+<p><strong>WAN:</strong> wide Area Network</p>
+<h2 id="week-6-troubleshooting-networking-issues">week 6: troubleshooting networking issues</h2>
+<p>ping
+traceroute</p>
 
                                 
                                 </section>
@@ -230,7 +280,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Computer Networking","level":"1.3","depth":1,"next":{"title":"Becoming a Power user","level":"1.4","depth":1,"path":"content/M3_Powe_user.md","ref":"content/M3_Powe_user.md","articles":[]},"previous":{"title":"Technical Support fundamentals","level":"1.2","depth":1,"path":"content/M1_Fundamentals.md","ref":"content/M1_Fundamentals.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/M2_Networking.md","mtime":"2020-07-15T15:30:36.062Z","type":"markdown"},"gitbook":{"version":"3.5.2","time":"2020-07-15T17:17:32.092Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Computer Networking","level":"1.3","depth":1,"next":{"title":"Becoming a Power user","level":"1.4","depth":1,"path":"content/M3_Powe_user.md","ref":"content/M3_Powe_user.md","articles":[]},"previous":{"title":"Technical Support fundamentals","level":"1.2","depth":1,"path":"content/M1_Fundamentals.md","ref":"content/M1_Fundamentals.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/M2_Networking.md","mtime":"2020-07-21T21:01:05.484Z","type":"markdown"},"gitbook":{"version":"3.5.2","time":"2020-07-21T21:01:57.220Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

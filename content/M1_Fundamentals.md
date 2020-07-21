@@ -36,5 +36,3 @@ This week dealt with troubleshooting techniques and how to handle interacting wi
 * Documenting and ticketing known issues, so when they appear again they are fully known and understood how to deal with tem and not start form scratch  
 
 
-
-and the importants of the stack model 
