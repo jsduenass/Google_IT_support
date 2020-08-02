@@ -36,3 +36,15 @@ This week dealt with troubleshooting techniques and how to handle interacting wi
 * Documenting and ticketing known issues, so when they appear again they are fully known and understood how to deal with tem and not start form scratch  
 
 
+### ITIL
+The Information Technology Infrastructure Library is a set of standar practices.
+designed for a information technology service delivery model 
+* Strategy
+* Desing
+* Transition
+* Operation
+* Continual service improvement
+
+
+RFC: Request For Change 
+CAB: Change Advisory Board
