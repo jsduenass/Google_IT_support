@@ -9,7 +9,7 @@ A full description of all of the hardware , software, licenses available at your
 The following is a ticket system design to document the debugging proccess used when encountering errors and misconfigurations in a daily use. This system is intended for personal use and might struggle to scale for more complex organizations. Some of the issues this system does not take into account and lack the capabilities to deal with can be found [here]().
 
 ### Setting up the rules
-__Structure:__ Each ticket must have the following components: an identification code, a summary, an status and short description of the debuggin process. Some other components that become important in a complex organization but are not implemented in this particular system are the following: priority, date of filing, channel used to file, entity responsable, feed back and costumer satisfaction.    
+__Structure:__ Each ticket must have the following components: an identification code, a summary, an status and short description of the debuggin process. Some other components that become important in a complex organization but are not implemented in this particular system are the following: priority, date of filing, channel used to file, entity responsable, comments, feed back and costumer satisfaction.    
 
 __identification code__: is an numberic code that uniquely identifies each ticket filed, it is composed of two parts: The __category__ part, a four digit number each one  representing a level, inspired by the Dewey Decimal Classification system (DDC) would ticket and __id number__ and 
 
@@ -26,42 +26,63 @@ periodic archiving
 
 
 1. OS:
-0 -> undefined
 1 -> Windows
 2 -> Linux
+3 -> dual boot
 
 2. Aplication type:
 1 -> System 
-Networking
-
-2 -> Office
+2 -> Networking and Internet related
 3 -> Programming tools
+4 -> Ofimatic software 
 
-* __0****__
-    
+
+
 
 
 ### Ticket list
 
-* __0001 dll missing:__ when openning Rstudio after a installing a new package ```xlsx``` and loading it through  ```library(xlsx)``` error rJava.dll missing. R version 4.0 
+* __0100-01 SD card not writable:__ __solved__ unable to boot rasbain into the SD card it is not writable.
 
-![error message](./media/images/ticket-0001-dll-library-missing.png)
+enable writable permissions. enter command line and run diskpart.  "did not solve the issue"
 
-the .dll file need to be register back __did not work__ 
+    attributes disk clear readonly
+
+for security issues SD cards have a lock slide that limits the capabilitie to write into it. 
+
+remove the SD card and unlock the slide.
+
+
+* __1300-01 dll missing:__ __solved__ when openning Rstudio after a installing a new package ```xlsx``` and loading it through  ```library(xlsx)``` error rJava.dll missing. R version 4.0. 
+
+![error message](./media/images/tickets/ticket-1400-01-dll-library-missing.png)
+
+register back the .dll file.  "did not solve the issue" 
     
     regsvr32 /u "D:/programacion/documentation/R-4.0.0/library/rJava/libs/x64/rJava.dll"
 
-depurate the dll file
+depurate the dll file. "not tried"
 
-update R from version 4.0 version to 4.2 load  ```library(xlsx)```
+update R from version 4.0 version to 4.2, when loading the library   ```library(xlsx)``` a more clear error message is presented.
     
     error: Your java version is 14.  Need 1.5.0 or higher.
 
-update java  __solved__
+update java  "solved"
 
-* 0002: disable read only
- 
-    attributes disk clear readonly
+* __2100-01 sound__ __unsolved__ sub woffer not being used in ubuntu
+
+* __2200-01 play netflix and amazon:__  __solved__ Both netflix and amazon prime are unable to play in ubuntu version: 2020.4 in firefox  version: 79.
+
+In firefox enble DRM, from settings enable the DRM option, " this was a required but not suficient step".
+
+install missing drivers
+    sudo apt install ubuntu-restricted-extras
+
+
+
+* __3100-01 mount NTF partition dual boot__
+
+* __3300-01 git all files changed__ __unsolved__
 
 
 
@@ -78,3 +99,17 @@ scprits has no permission, tempora comment profile.ps1
 ```
 
 
+## Reports
+
+linux
+bettery report in ubuntu
+
+
+processor architecture
+instruction set
+
+cross plataform capabilities 
+
+Java writte once run everywhere
+
+Arm is RISC (Reduced Instruction Set Computing) based while Intel (x86) is CISC (Complex Instruction Set Computing)
