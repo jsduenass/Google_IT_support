@@ -14,3 +14,19 @@ let's ask it itself what it is, by typping the command ```help```
 
 cmdlet 
 
+# Operating System
+kernel: t provides tools with which all services can be built so user can not interact directly with the hardware making it safer. The tools provided by the kernel are used via system calls. The tow most important task of the kernel are meomory managment and process management.
+
+system  programs: Implement services in order to make the Operating System run.
+
+> network protocols have been abstracted into one programming interface, the BSD socket library.
+
+up to date?
+
+There are also two popular desktop managers, KDE and Gnome. 
+
+ NFS (Network File System) is supported by the kernel. CIFS  ( Common Internet File System) however is not. In Linux, CIFS is supported by Samba
+
+ email from local adiminstrated program to web service. running mail services 
+
+application programs

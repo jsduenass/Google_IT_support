@@ -77,7 +77,13 @@ update R from version 4.0 version to 4.2, when loading the library   ```library(
 
 update java  "solved"
 
-* __1300-01 krita crash__ __solved__ krita would load and then suddenly close might be related with another Adobe bug which closses Ilustrator
+* __1300-02 git LSB SSH uncompatible__ 
+
+
+![ddl error message](./media/images/tickets/ticket-1300-03-git-LSB-SSH-uncompatible.png)
+
+
+* __1400-01 krita crash__ __solved__ krita would load and then suddenly close might be related with another Adobe bug which closses Ilustrator
 check crash log 
 `%LOCALAPPDATA%kritacrash.log`
 

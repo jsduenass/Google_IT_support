@@ -88,18 +88,6 @@ a adding an existing local repository to an empty remote repo.
 ```
 
 
-# git large files 
-An extension for handling version control for large files https://git-lfs.github.com/
-
-    git lfs track "*.csv"
-    git lfs track "*.xlsx"
-    git add .gitattributes
-
-
-# git hooks
-
-do an action after a command is sent by th client side or recieve by the server side
-
 ```
 
 
