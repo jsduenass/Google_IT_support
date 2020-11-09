@@ -3,7 +3,10 @@
 
 take into account room of improvement making it understandable
  
-question: programming in a globalized world with many different languanges? both natural and programming languages. how do this programs intertac and operate in an incresingly complicated and entagle goblal system.
+question: programming in a globalized world with many different languanges both natural and programming languages. how do this programs intertac and operate in an incresingly complicated and entagled globlal system?.
+> Concerns about correctness, simplicity, and efficiency become ours the minute we start writting code for others and accept the responsability to do that well, that is, we must accept that responsability when we decide to become professinonals.
+
+>almost all of the time we are just interested in knowing how to call afunction - seeing the definition would just be a distracting
 
 
 # Know the tools
@@ -75,6 +78,22 @@ error types:
 * compile error
 * linker erros
 * run-time
+* logic errors
+
+vector vs array, vector allows to have a collection of values of unspecified size where elements can be added or remove when using vector one needs to ```#include vector```
+
+
+## error assumptions
+Unless specified otherwise we asume that a program:
+1. Should produce the desired results for all ligal inputs
+2. Should give reasonable error messages for all ilegal inputs
+3. Need not worry about misbehaving hardware
+4. Need not worry about misbehaving software
+5. Is allow to terminate after finding an error
+
+## source of error checklist
+* Poor Specification: it is no clearly define what the program should do. how does this relate with machine learning where the problem by is not well defined? 
+
 
 [An Overview of the C++ Programming Language](https://www.stroustrup.com/crc.pdf)
 [Programming: Principles and Practice using C++ ](https://ptgmedia.pearsoncmg.com/images/9780321992789/samplepages/9780321992789.pdf)
