@@ -61,6 +61,15 @@ distributed systems
 
 [ Haoyi's Programming Blog](https://www.lihaoyi.com/)
 
+## computer architecture
+communication protocols networkign and bus and interfaces
+[embedded linux](http://index-of.es/Varios/Building.Embedded.Linux.Systems.pdf)
+Yocto Project
+
+cross-compiling, BDM or JTAG debugging
+unix system administration
+
+
 # Know the tools
 
 Where to start 

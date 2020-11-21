@@ -25,8 +25,8 @@ up to date?
 
 There are also two popular desktop managers, KDE and Gnome. 
 
- NFS (Network File System) is supported by the kernel. CIFS  ( Common Internet File System) however is not. In Linux, CIFS is supported by Samba
+NFS (Network File System) is supported by the kernel. CIFS  ( Common Internet File System) however is not. In Linux, CIFS is supported by Samba
 
- email from local adiminstrated program to web service. running mail services 
+email from local adiminstrated program to web service. running mail services 
 
 application programs

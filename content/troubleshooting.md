@@ -23,9 +23,7 @@ No ticket gets eleminated
 periodic archiving 
 
 0000-00
-
-\<OS\>
-
+[][][][]-[][]
 
 
 1. OS:
@@ -102,23 +100,18 @@ The errors show that ` OpenAdapter12+0xe432e` is not recognize by the `nvwgf2umx
 * __2100-01 sound__ __unsolved__ sub woffer not being used in ubuntu
 
 * __2100-02 screen drivers__ __unsolved__
+ Linux does not support NVIDIA GPU drive which make the screen present some glitches.
  from settigns -> about find the current graphics to be "NV11/ / Mesa inta Hd Graphics 530" graphic 
     ubuntu-drivers devices
+    ```
     sudo ubuntu-drivers autoinstall
 
     sudo lshw -c display
+    ```
 
-[external source](https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04)
+    [driver installation](https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04)
 
-
-* __2200-01 play netflix and amazon:__  __solved__ Both netflix and amazon prime are unable to play in ubuntu version: 2020.4 in firefox  version: 79.
-
-In firefox enble DRM, from settings enable the DRM option, " this was a required but not suficient step".
-
-install missing drivers
-    sudo apt install ubuntu-restricted-extras
-
-* __2100-01 used long path in terminal:__ __solved__ want to access some directories from terminal, but they have long path names makeing it unconfortable to work with them in the shell. 
+* __2100-03 used long path in terminal:__ __solved__ want to access some directories from terminal, but they have long path names makeing it unconfortable to work with them in the shell. 
 use simbolik links to other the home directory (~) under a hidden folder name `paths` and load them into the shell configuration file `~/.bashr` 
 
 ``` 
@@ -130,9 +123,43 @@ use simbolik links to other the home directory (~) under a hidden folder name `p
     source ~/.bashrc
 ``` 
 
+* __2100-03 CRS dongle__ __unsolved__ set up USB CRS dongle
+
+* __2200-01 play netflix and amazon:__  __solved__ Both netflix and amazon prime are unable to play in ubuntu version: 2020.4 in firefox  version: 79.
+
+In firefox enble DRM, from settings enable the DRM option, " this was a required but not suficient step".
+
+install missing drivers
+    sudo apt install ubuntu-restricted-extras
+
+* __2100-02 markdown view in firefox__ __unsolved__ firefox version:82.0.3 is unable to open markdown files because it treats them as a downloadable file. 
+
+trying by updating the MIME 
+```
+    touch ~/.local/share/mime/packages/text-markdown.xml
+    xdg-open ~/.local/share/mime/packages/text-markdown.xml
+```
+paste inside the file:
+
+```XML
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+  <mime-type type="text/plain">
+    <glob pattern="*.md"/>
+    <glob pattern="*.mkd"/>
+    <glob pattern="*.markdown"/>
+  </mime-type>
+</mime-info>
+```
+
+Save & quit.
+``` 
+update-mime-database ~/.local/share/mime
+```
+
 * __3100-01 mount NTF partition dual boot__
 
-* __3300-01 git all files changed__ __unsolved__
+* __3300-01 git all files changed__ __unsolved__  windows use of __CRLF__ and linux use of __LF__  for line ending causes an incopatible when using ```git```. Because all files are modified when switching OS.
 
 
 ## power shell
