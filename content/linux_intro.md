@@ -3,6 +3,14 @@
 History on Unix
 The OS wars
 
+neofetch
+
+```
+uname -a
+cat /etc/os-release
+```
+
+
 ## Distributions
 interested in 
 
@@ -14,8 +22,20 @@ red hat education program
 
 Arch
 
+elementaryOS
+
 SELinux
 
+Desktop enviroment
+Gnmone
+KDE
+deepin
+patheon 
+buggie
+
+wine
+lutris
+opendestop org
 container
 
 system adminstrator
@@ -105,6 +125,8 @@ dev: devices files useful to interface with hardware
 var: 
 
 
+~/.local: 
+
 aliases
 
 shell documentation
@@ -160,6 +182,37 @@ apt
 snap 
 
 yummi
+
+
+# tools to check computer info
+
+check USB devices connected
+```
+lsusb 
+    # Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hubP
+    # ....
+    # Bus 001 Device 007: ID 0a12:0001 Cambridge Silicon Radio, Ltd Bluetooth Dongle (HCI mode)
+lsusb -v -s 001:007
+```
+
+check bluetooth estatus with ```hcitool``` HCI (Host Control Interface) or the service and ```gatttool``` for BLE  (Bluetooth Low Energy) 
+
+```
+hcitool dev
+sudo hciconfig -a hci0
+sudo hcitool lescan
+sudo service bluetooth status
+```
+
+bluetooth agent
+```
+bluetoothctl
+```
+
+parrot bluetooth adress
+90:3A:E6:24:29:FE 
+D0:3A:29:FE:E6:24
+LE-reserved_k
 
 
 ## red hat free courses

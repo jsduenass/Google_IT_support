@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Version control with git · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.6.1">
+        <meta name="generator" content="HonKit 3.7.4">
         
         
         
@@ -17,7 +16,7 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -57,6 +56,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="about.html" />
+    
     
     <link rel="prev" href="troubleshooting.html" />
     
@@ -64,7 +65,7 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
@@ -165,6 +166,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.7" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    About these notes
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -231,7 +245,7 @@
     # change directory
     cd ./my_folder
 </code></pre>
-<p>the shell is like your file browser  the command <code>pwd</code> prints the working directory you are on,  <code>ls</code> shows a the files inside the folder and <code>cd</code> allows to change the folder. this are basic terminal command if you want to know more you can find a more in depth dive <a href="">here</a>.</p>
+<p>the shell is like your file browser  the command <code>pwd</code> prints the working directory you are on,  <code>ls</code> shows a the files inside the folder and <code>cd</code> allows to change the folder. this are basic terminal command if you want to know more you can find a more in depth dive <a href>here</a>.</p>
 <h3 id="config-a-git-user">config a git user</h3>
 <p>In order to start using git the first thing that needs to be set is a username and a email, git use them in the commit process in order to generate a a unique number (hash) to each state of the project.</p>
 <p>once inside the shell we config the user name and a asociated email</p>
@@ -260,7 +274,14 @@
 <p>a adding an existing local repository to an empty remote repo.</p>
 <pre><code>    git remote add origin [remote repo URL]
     git push -u origin master
-</code></pre><pre><code>
+</code></pre><h1 id="git-large-files">git large files</h1>
+<p>An extension for handling version control for large files <a href="https://git-lfs.github.com/" target="_blank">https://git-lfs.github.com/</a></p>
+<pre><code>git lfs track &quot;*.csv&quot;
+git lfs track &quot;*.xlsx&quot;
+git add .gitattributes
+</code></pre><h1 id="git-hooks">git hooks</h1>
+<p>do an action after a command is sent by th client side or recieve by the server side</p>
+<pre><code>
 
     # git config --global user.name &quot;&quot;
     # ssh-keygen -t rsa -b 4096 -C &quot;jsduenass@unal.edu.co&quot;
@@ -325,10 +346,14 @@
 
             
                 
-                <a href="troubleshooting.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Practical troubleshooting">
+                <a href="troubleshooting.html" class="navigation navigation-prev " aria-label="Previous page: Practical troubleshooting">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="about.html" class="navigation navigation-next " aria-label="Next page: About these notes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -337,18 +362,58 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Version control with git","level":"1.6","depth":1,"previous":{"title":"Practical troubleshooting","level":"1.5","depth":1,"path":"content/troubleshooting.md","ref":"content/troubleshooting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/git_and_github.md","mtime":"2020-08-13T23:42:27.265Z","type":"markdown"},"gitbook":{"version":"3.6.1","time":"2020-08-20T13:37:49.847Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Version control with git","level":"1.6","depth":1,"next":{"title":"About these notes","level":"1.7","depth":1,"path":"content/about.md","ref":"content/about.md","articles":[]},"previous":{"title":"Practical troubleshooting","level":"1.5","depth":1,"path":"content/troubleshooting.md","ref":"content/troubleshooting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/git_and_github.md","mtime":"2022-07-13T04:34:15.830Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-07-13T13:23:21.940Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
